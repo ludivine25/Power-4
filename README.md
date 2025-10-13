@@ -17,8 +17,3 @@ HTML5 / CSS3 (sans framework)
 Templates Go pour le rendu dynamique
 Aucune dépendance externe
 📁 Structure du projet
-🕹️ Démarrer le projet
-Clone le dépôt :
-git clone https://github.com/ton-utilisateur/power4-web.git
-cd power4-web
-go run server.go
