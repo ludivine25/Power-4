@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power4</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body class="{{if .GravityUp}}inverse{{else}}normal{{end}}">
+    <h2>Tour de {{.CurrentPlayer}}</h2>
+    <p>Tour n° {{.MoveCount}}</p>
+    <p>Gravité: <strong>{{if .GravityUp}}⬆️ Inversée{{else}}⬇️ Normale{{end}}</strong></p>
+    <p>Score: {{.Player1}} ({{.ScoreP1}}) vs {{.Player2}} ({{.ScoreP2}})</p>
+    <form action="/play" method="post">
+        {{range $i, $col := .Columns}}
+        <button name="column" value="{{$i}}">Col {{$i}}</button>
+        {{end}}
+    </form>
+    <table>
+        {{range .Grid}}
+        <tr>
+            {{range .}}
+            <td>
+                {{if eq . 1}}<div class="token red"></div>{{end}}
+                {{if eq . 2}}<div class="token yellow"></div>{{end}}
+                {{if eq . 0}}<div class="token empty"></div>{{end}}
+            </td>
+            {{end}}
+        </tr>
+        {{end}}
+    </table>
+</body>
+</html>
