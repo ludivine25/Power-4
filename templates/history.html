@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <h1>📜 Historique des Parties</h1>
+    <table>
+        <tr>
+            <th>Joueur 1</th>
+            <th>Joueur 2</th>
+            <th>Vainqueur</th>
+            <th>Coups joués</th>
+            <th>Gravité finale</th>
+        </tr>
+        {{range .}}
+        <tr>
+            <td>{{.PLayer1}}</td>
+            <td>{{.PLayer2}}</td>
+            <td>{{.Winner}}</td>
+            <td>{{.MoveCount}}</td>
+            <td>{{.Gravity}}</td>
+        </tr>
+        {{end}}
+    </table>
+    <a href="/" class="button">🏠 Retour au menu</a>
+</body>
+</html>
