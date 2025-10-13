@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	game    *models.game
+	game    *models.Game
 	history []models.GameHistory
 	mu      sync.Mutex
 )
@@ -18,7 +18,7 @@ var (
 func main() {
 	http.HandleFunc("/", startPage)
 	http.HandleFunc("/start", startGame)
-	http.HandleFunc("/play", startMove)
+	http.HandleFunc("/play", playMove)
 	http.HandleFunc("/win", winPage)
 	http.HandleFunc("/draw", drawPage)
 	http.HandleFunc("/rematch", rematch)
