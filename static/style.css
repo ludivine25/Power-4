@@ -1,0 +1,89 @@
+body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #121212;
+    color: #08ddc4;
+    text-align: center;
+    padding: 30px;
+}
+h1, h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #08ddc4, 0 0 10px #08ddc4;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #08ddc4;
+    background-color: #1e1e1e;
+}
+.token {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: auto;
+}
+.token.red {
+    background-color: #ff4c4c;
+    box-shadow: 0 0 5px #ff4c4c;
+}
+.token.yellow {
+    background-color: #ffe600;
+    box-shadow: 0 0 5px #ffe600;
+}
+.token.empty {
+    background-color: #2a2a2a;
+    box-shadow: 0 0 5px #08ddc4;
+}
+input, select {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #121212;
+    color: #08ddc4;
+    border: 2px solid #08ddc4;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+button, .button {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #08ddc4;
+    color: #121212;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #08ddc4;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+button:hover, .button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+form {
+    margin-top: 30px;
+}
+.victory {
+    font-size: 2em;
+    color: #08ddc4;
+    text-shadow: 0 0 10px #08ddc4;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+body.inverse {
+    background-color: #2b0033;
+}
