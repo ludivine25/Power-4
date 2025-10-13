@@ -1,5 +1,5 @@
 🎮 Power4 Web
-Power4 Web est un projet web développé en Go qui permet à deux joueurs de s'affronter en local dans une partie de Puissance 4 via une interface rétro stylisée. Le jeu est entièrement géré côté serveur, avec une interface HTML/CSS générée par des templates Go.
+Power4 est un projet web développé en Go qui permet à deux joueurs de s'affronter en local dans une partie de Puissance 4 via une interface rétro stylisée. Le jeu est entièrement géré côté serveur, avec une interface HTML/CSS générée par des templates Go.
 
 🚀 Fonctionnalités
 ✅ Interface web rétro arcade (style années 80)
