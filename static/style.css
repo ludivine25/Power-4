@@ -8,7 +8,7 @@ body {
 h1, h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    text-shadow: 0 0 5px #08ddc4, 0 0 10px #08ddc4;
+    text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0;
 }
 table {
     margin: auto;
@@ -23,7 +23,7 @@ td {
 td {
     width: 45px;
     height: 45px;
-    border: 2px solid #08ddc4;
+    border: 2px solid #00ffe0;
     background-color: #1e1e1e;
 }
 .token {
@@ -42,13 +42,13 @@ td {
 }
 .token.empty {
     background-color: #2a2a2a;
-    box-shadow: 0 0 5px #08ddc4;
+    box-shadow: 0 0 5px #00ffe0;
 }
 input, select {
     font-family: 'Press Start 2P', monospace;
     background-color: #121212;
-    color: #08ddc4;
-    border: 2px solid #08ddc4;
+    color: #00ffe0;
+    border: 2px solid #00ffe0;
     padding: 10px;
     margin: 10px;
     width: 80%;
@@ -56,13 +56,13 @@ input, select {
 }
 button, .button {
     font-family: 'Press Start 2P', monospace;
-    background-color: #08ddc4;
+    background-color: #00ffe0;
     color: #121212;
     padding: 12px 20px;
     margin: 10px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 0 10px #08ddc4;
+    box-shadow: 0 0 10px #00ffe0;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -76,8 +76,8 @@ form {
 }
 .victory {
     font-size: 2em;
-    color: #08ddc4;
-    text-shadow: 0 0 10px #08ddc4;
+    color: #00ffe0;
+    text-shadow: 0 0 10px #00ffe0;
     animation: blink 1s infinite;
 }
 @keyframes blink {
