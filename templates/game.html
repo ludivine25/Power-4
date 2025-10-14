@@ -12,7 +12,7 @@
   <p>Score : {{.Player1}} ({{.ScoreP1}}) vs {{.Player2}} ({{.ScoreP2}})</p>
   <form action="/play" method="POST">
     {{range $i, $col := .Columns}}
-      <button name="column" value="{{$i}}">Col {{$i}}</button>
+    <button name="column" value="{{$i}}">Col {{$i}}</button>
     {{end}}
   </form>
   <table>
