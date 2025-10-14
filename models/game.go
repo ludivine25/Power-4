@@ -14,6 +14,7 @@ type Game struct {
 	ScoreP1   int
 	ScoreP2   int
 }
+
 type GameHistory struct {
 	Player1   string
 	Player2   string
@@ -36,6 +37,7 @@ func NewGame(rows, cols int, p1, p2 string) *Game {
 		Turn:    1,
 	}
 }
+
 func (g *Game) Play(col int) bool {
 	if col < 0 || col >= g.Columns || g.Winner != 0 || g.Draw {
 		return false
@@ -43,6 +45,10 @@ func (g *Game) Play(col int) bool {
 	var rowRange []int
 	if g.GravityUp {
 		for i := 0; i < g.Rows; i++ {
+			rowRange = append(rowRange, i)
+		}
+	} else {
+		for i := g.Rows - 1; i >= 0; i-- {
 			rowRange = append(rowRange, i)
 		}
 	}
@@ -73,9 +79,7 @@ func (g *Game) Play(col int) bool {
 
 func (g *Game) CheckWin(r, c int) bool {
 	player := g.Grid[r][c]
-	directions := [][]int{
-		{0, 1}, {1, 0}, {1, 1}, {1, -1},
-	}
+	directions := [][]int{{0, 1}, {1, 0}, {1, 1}, {1, -1}}
 	for _, d := range directions {
 		count := 1
 		for i := 1; i < 4; i++ {
@@ -100,6 +104,7 @@ func (g *Game) CheckWin(r, c int) bool {
 	}
 	return false
 }
+
 func (g *Game) CheckDraw() bool {
 	for _, row := range g.Grid {
 		for _, cell := range row {

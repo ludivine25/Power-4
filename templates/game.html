@@ -10,6 +10,7 @@
   <p>Tour n° {{.MoveCount}}</p>
   <p>Gravité : <strong>{{if .GravityUp}}⬆️ Inversée{{else}}⬇️ Normale{{end}}</strong></p>
   <p>Score : {{.Player1}} ({{.ScoreP1}}) vs {{.Player2}} ({{.ScoreP2}})</p>
+  <p>Grille : {{len .Grid}} lignes × {{len (index .Grid 0)}} colonnes</p>
   <form action="/play" method="POST">
     {{range $i, $col := .Columns}}
     <button name="column" value="{{$i}}">Col {{$i}}</button>

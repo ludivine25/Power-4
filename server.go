@@ -74,7 +74,11 @@ func playMove(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	game.Play(col)
+	success := game.Play(col)
+	if !success {
+		renderGame(w)
+		return
+	}
 
 	if game.Winner != 0 {
 		recordWin()
