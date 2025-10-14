@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Match Nul</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <title>Match nul</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>🤝 Match Nul !</h1>
-    <p>Auncun joueur a gagné, la grille est pleine</p>
-    <table>
-        {{range .Grid}}
-        <tr>
-            {{range .}}
-            <td>
-                {{if eq . 1}}<div class="token red"></div>{{end}}
-                {{if eq . 2}}<div class="token yellow"></div>{{end}}
-                {{if eq . 0}}<div class="token empty"></div>{{end}}
-            </td>
-            {{end}}
-        </tr>
-        {{end}}
-    </table>
-    <form action="/rematch" method="post">
-        <button type="submit">🔁 Rejouez avec les mêmes paramètres</button>
-    </form>
-    <a href="/" class="button">🏠 Retournez au menu</a>
+  <h1>🤝 Match nul !</h1>
+  <p>Aucun joueur n'a gagné, la grille est pleine.</p>
+  <table>
+    {{range .Grid}}
+    <tr>
+      {{range .}}
+      <td>
+        {{if eq . 1}}<div class="token red"></div>{{end}}
+        {{if eq . 2}}<div class="token yellow"></div>{{end}}
+        {{if eq . 0}}<div class="token empty"></div>{{end}}
+      </td>
+      {{end}}
+    </tr>
+    {{end}}
+  </table>
+  <form action="/rematch" method="POST">
+    <button type="submit">🔁 Rejouer avec les mêmes paramètres</button>
+  </form>
+  <a href="/" class="button">🏠 Retour au menu</a>
 </body>
 </html>

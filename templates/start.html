@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power4 Start</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <title>Power4 Start</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>🎮 Bienvenue dans le Power4 Web</h1>
-    <form action="/star" method="post">
-        <input name="player1" placeholder="Nom du joueur 1" required><br>
-        <input name="player2" placeholder="Nom du joueur 2" required><br>
-        <label>Difficulté: </label>
-        <select name="difficulty">
-            <option value="easy">Facile (6x7)</option>
-            <option value="normal">Normal (6x9)</option>
-            <option value="hard">difficile (7x8)</option>
-        </select><br>
-        <button type="submit">🚀 Commencer la partie</button>
-    </form>
-    <br>
-    <a href="/history" class="button">📜 Voir l'historique</a>
+  <h1>🎮 Bienvenue dans Power4 Web</h1>
+  <form action="/start" method="POST">
+    <input name="player1" placeholder="Nom du joueur 1" required><br>
+    <input name="player2" placeholder="Nom du joueur 2" required><br>
+    <label>Difficulté :</label>
+    <select name="difficulty">
+      <option value="easy">Facile (6x7)</option>
+      <option value="normal">Normal (6x9)</option>
+      <option value="hard">Difficile (7x8)</option>
+    </select><br>
+    <button type="submit">🚀 Commencer la partie</button>
+  </form>
+  <br>
+  <a href="/history" class="button">📜 Voir l’historique</a>
 </body>
 </html>
