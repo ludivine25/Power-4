@@ -5,13 +5,16 @@ Bienvenue dans le projet Power4 Web, qui est une application web développée en
 Ce projet est conçu pour être facile à utiliser, même si vous n’avez jamais codé. Chaque étape est expliquée pour que vous puissiez le lancer sans difficultée.
 
 🧠 Objectif du projet:
+
 Créer un serveur web en Go qui va:
 Afficher une interface HTML pour jouer à Puissance 4.
 Gérer toute la logique du jeu côté serveur.
 Permettre de jouer à deux en local.
 Proposer plusieurs niveaux de difficulté, de facile a difficile, on aura un changement de taille de la grille.
 Ajouter la gravité inversée au bout de 5 tours.
+
 📦 Les prérequis:
+
 Avant de commencer, vous devez avoir :
 Go installé sur votre ordinateur : Télécharger Go
 Un navigateur web (par exemple: Chrome, Firefox, etc.)
@@ -36,29 +39,29 @@ Si vous n'avez eu de mail d'invitation pour de Figma, vous ne pourrez pas utilis
 
 Voici les dossiers et fichiers que vous trouverez :
 
-Power4-Web/
-├── assets/        # Contient les images de Figma
-│   ├── figma_gameDifficile.png
-│   ├── figma_gameFacile.png
-│   ├── figma_gameNormal.png
-│   ├── figma_historique.png
-│   ├── figma_match_nul-difficile.png
-│   ├── figma_menu.png
-│   ├── figma_victoireJ1-normal.png
-│   └── figma_victoireJ2-facile.png
-├── models/           # Contient la logique du jeu
-│   └── game.go
-├── static/           # Contient le fichier CSS pour le design
-│   └── style.css
-├── templates/        # Contient les pages HTML
-│   ├── start.html    # Page d’accueil
-│   ├── game.html     # Page du jeu
-│   ├── win.html      # Page de victoire
-│   ├── draw.html     # Page de match nul
-│   └── history.html  # Page d'historique des parties
-├── server.go         # Fichier principal du serveur (celui à lancer)
-├── go.mod            # Fichier de configuration Go
-└── README.md         # Le fichier d’explication
+    Power4-Web/
+    ├── assets/        # Contient les images de Figma
+    │   ├── figma_gameDifficile.png
+    │   ├── figma_gameFacile.png
+    │   ├── figma_gameNormal.png
+    │   ├── figma_historique.png
+    │   ├── figma_match_nul-difficile.png
+    │   ├── figma_menu.png
+    │   ├── figma_victoireJ1-normal.png
+    │   └── figma_victoireJ2-facile.png
+    ├── models/           # Contient la logique du jeu
+    │   └── game.go
+    ├── static/           # Contient le fichier CSS pour le design
+    │   └── style.css
+    ├── templates/        # Contient les pages HTML
+    │   ├── start.html    # Page d’accueil
+    │   ├── game.html     # Page du jeu
+    │   ├── win.html      # Page de victoire
+    │   ├── draw.html     # Page de match nul
+    │   └── history.html  # Page d'historique des parties
+    ├── server.go         # Fichier principal du serveur (celui à lancer)
+    ├── go.mod            # Fichier de configuration Go
+    └── README.md         # Le fichier d’explication
 
 🚀 Étapes pour lancer le projet:
 
@@ -78,9 +81,8 @@ Tapez :
 Tapez :
 
     go run server.go
-(Le serveur démarre et affiche un message comme :
 
-Serveur lancé sur http://localhost:8000 )
+(Le serveur démarre et affiche un message comme : Serveur lancé sur http://localhost:8000 )
 
 4. Ouvrir le jeu dans le navigateur
 Copiez l’adresse affichée (http://localhost:8000) et collez-la dans votre navigateur.
@@ -114,21 +116,24 @@ Au debut les jetons tombent du bas vers le haut, puis au bout de 5 tours le jeto
 
 🌐 Les routes techniques (pour les développeurs):
 
-Méthode	    Route	    Description
-GET	          /	        C'est pour la page d’accueil
-POST	     /start	    Va lancer une nouvelle partie
-POST	    /play	    Va enregistrer un coup
-GET	        /win	    Va afficher la page de victoire
-GET	        /draw	    Va afficher la page de match nul
-GET	        /rematch	Va relancer une partie
-GET	        /history	Permet d'afficher l’historique
-GET	        /static/	Va servir a afficher les fichiers CSS
+    Méthode	    Route	    Description
+
+    GET	          /	        C'est pour la page d’accueil
+    POST	     /start	    Va lancer une nouvelle partie
+    POST	    /play	    Va enregistrer un coup
+    GET	        /win	    Va afficher la page de victoire
+    GET	        /draw	    Va afficher la page de match nul
+    GET	        /rematch	Va relancer une partie
+    GET	        /history	Permet d'afficher l’historique
+    GET	        /static/	Va servir a afficher les fichiers CSS
 
 🧱 Les technologies utilisées:
-Technologie	    Rôle
-Go	            C'est le serveur web, logique du jeu, génération dynamique des pages
-HTML	        C'est la structure des pages
-CSS	            C'est le design visuel           
+
+    Technologie	    Rôle
+
+    Go	            C'est le serveur web, logique du jeu, génération dynamique des pages
+    HTML	        C'est la structure des pages
+    CSS	            C'est le design visuel           
 
 📚 Ressources pour apprendre:
 
