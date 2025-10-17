@@ -63,42 +63,46 @@ Ce projet est conçu pour être facile à utiliser, même si vous n’avez jamai
 
     🕹️ Comment jouer:
 
-        La page d’accueil: vous devez entrer les noms des deux joueurs et choisir une difficulté :
+        Sur la page d’accueil: 
+            Vous devrez entrer les noms des deux joueurs et choisir une difficulté :
 
-            Facile : grille 6x7
-            Normal : grille 6x9
-            Difficile : grille 7x8
+                Facile : grille 6x7
+                Normal : grille 6x9
+                Difficile : grille 7x8
 
-        Pour la page de jeu, vous devez cliquer sur une colonne pour y placer un jeton. 
-        Le tour va passer automatiquement à l’autre joueur.
-        Pour ce qui cooncerna le victoire ou le match nul, le jeu va le détecter automatiquement :
+        Pour la page de jeu:
+            Vous devrez cliquer sur une colonne pour y placer un jeton. 
+            Le tour va passer automatiquement à l’autre joueur.
+            Pour ce qui concernera la victoire ou le match nul, le jeu va le détecter automatiquement :
 
-            Une victoire c'est quand 4 jetons sont alignés et pour un match nul c'est quand la grille est pleine, donc pas de gagnant.
+                Une victoire c'est quand 4 jetons sont alignés (verticalement/honrizontalement/dans la diagonale) et pour un match nul c'est quand la grille est pleine, et qu'il n'y a donc pas de gagnant.
 
-        Le rematch il faut cliquer sur “Rejouez avec les mêmes paramètres” pour relancer une partie avec le même joueur.
-        L'historique vous permez de consulter les parties précédentes avec les scores et qui a gagné.
+        Le rematch il faut cliquer sur “Rejouez avec les mêmes paramètres” pour relancer une partie avec le même joueur et la même difficultée.
+        Pour l'historique, cela vous permez de consulter les résultats des parties précédentes avec les scores, qui a gagné, le nombre de tour qui ont été fait et la gravité qui été activé (inversée ou normale).
 
     🧲 Bonus : Gravité inversée
         Tous les 5 tours, la gravité change :
 
-        Au debut les jetons tombent du bas vers le haut, puis au bout de 5 tours le design change pour indiquer cette inversion.
+            Au debut les jetons tombent du bas vers le haut, puis au bout de 5 tours le jeton vont s'affichés de haut en bas, avec dans le "menu" écrit Gravité: ⬆️ Inversée.
 
     🌐 Les routes techniques (pour les développeurs):
         Méthode	    Route	    Description
-        GET	          /	        Page d’accueil
-        POST	     /start	    Lance une nouvelle partie
-        POST	    /play	    Enregistre un coup
-        GET	        /win	    Affiche la victoire
-        GET	        /draw	    Affiche le match nul
-        GET	        /rematch	Relance une partie
-        GET	        /history	Affiche l’historique
-        GET	        /static/	Sert les fichiers CSS
+        GET	          /	        C'est pour la page d’accueil
+        POST	     /start	    Va lancer une nouvelle partie
+        POST	    /play	    Va enregistrer un coup
+        GET	        /win	    Va afficher la page de victoire
+        GET	        /draw	    Va afficher la page de match nul
+        GET	        /rematch	Va relancer une partie
+        GET	        /history	Permet d'afficher l’historique
+        GET	        /static/	Va servir a afficher les fichiers CSS
 
     🧱 Les technologies utilisées:
         Technologie	    Rôle
-        Go	            Serveur web, logique du jeu, génération dynamique des pages
-        HTML	        Structure des pages
-        CSS	            Design visuel           
+        Go	            C'est le serveur web, logique du jeu, 
+                        génération dynamique des pages
+
+        HTML	        C'est la structure des pages
+        CSS	            C'est le design visuel           
 
     📚 Ressources pour apprendre: 
         Documentation:
