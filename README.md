@@ -19,9 +19,19 @@ Ce projet est conçu pour être facile à utiliser, même si vous n’avez jamai
         Un navigateur web (par exemple: Chrome, Firefox, etc.)
         Un terminal (comme: cmd, PowerShell, Terminal Mac/Linux)
         
-        Ensuite avant de commencé a coder, il faut faire une maquette pour mettre en forme toute la plupart des idées que nous avons. voici pour ce projet le lien de la maquette, faite sur FIgma : 
+        Ensuite avant de commencé a coder, il faut faire une maquette pour mettre en forme toute la plupart des idées que nous avons. voici pour ce projet le lien de la maquette, faite sur Figma: 
 
             https://www.figma.com/proto/8WMwHXqFFachqLNXnfm5AL/Power4?node-id=1-1743&t=aq7Mo7ylLUuTa7nb-1
+
+        Si vous n'avez eu de mail d'invitation pour de Figma, vous ne pourrez pas utilisez le lien. Voici ce que contient le Figma :
+            ![Capture d'écran](/assets/figma_menu.png)
+            ![Capture d'écran](/assets/figma_gameFacile.png)
+            ![Capture d'écran](/assets/figma_victoireJ2-facile.png)
+            ![Capture d'écran](/assets/figma_gameNormal.png)
+            ![Capture d'écran](/assets/figma_victoireJ1-normal.png)
+            ![Capture d'écran](/assets/figma_gameDifficile.png)
+            ![Capture d'écran](/assets/figma_match_nul-difficile.png)
+            ![Capture d'écran](/assets/figma_historique.png)
 
     📁 Structure du projet:
         Voici les dossiers et fichiers que vous trouverez :
