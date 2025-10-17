@@ -52,7 +52,7 @@ button, .button {
     margin: 5px;
     border: none;
     border-radius: 5px;
-    box-shadow: -5px 0 20px 5px #08e6e6;
+    box-shadow: 0 0 5px #08e6e6;
     cursor: pointer;
     text-decoration: none;
 }
