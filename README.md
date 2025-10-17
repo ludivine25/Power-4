@@ -18,6 +18,10 @@ Ce projet est conçu pour être facile à utiliser, même si vous n’avez jamai
         Go installé sur votre ordinateur : Télécharger Go
         Un navigateur web (par exemple: Chrome, Firefox, etc.)
         Un terminal (comme: cmd, PowerShell, Terminal Mac/Linux)
+        
+        Ensuite avant de commencé a coder, il faut faire une maquette pour mettre en forme toute la plupart des idées que nous avons. voici pour ce projet le lien de la maquette, faite sur FIgma : 
+
+            https://www.figma.com/proto/8WMwHXqFFachqLNXnfm5AL/Power4?node-id=1-1743&t=aq7Mo7ylLUuTa7nb-1
 
     📁 Structure du projet:
         Voici les dossiers et fichiers que vous trouverez :
