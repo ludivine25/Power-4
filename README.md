@@ -37,7 +37,17 @@ Ce projet est conçu pour être facile à utiliser, même si vous n’avez jamai
         Voici les dossiers et fichiers que vous trouverez :
 
             Power4-Web/
+            ├── templates/        # Contient les images de Figma
+            │   ├── figma_gameDifficile.png
+            │   ├── figma_gameFacile.png
+            │   ├── figma_gameNormal.png
+            │   ├── figma_historique.png
+            │   ├── figma_match_nul-difficile.png
+            │   ├── figma_menu.png
+            │   ├── figma_victoireJ1-normal.png
+            │   └── figma_victoireJ2-facile.png
             ├── models/           # Contient la logique du jeu
+            │   └── game.go
             ├── static/           # Contient le fichier CSS pour le design
             │   └── style.css
             ├── templates/        # Contient les pages HTML
