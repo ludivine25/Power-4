@@ -37,7 +37,7 @@ Ce projet est conçu pour être facile à utiliser, même si vous n’avez jamai
         Voici les dossiers et fichiers que vous trouverez :
 
             Power4-Web/
-            ├── templates/        # Contient les images de Figma
+            ├── assets/        # Contient les images de Figma
             │   ├── figma_gameDifficile.png
             │   ├── figma_gameFacile.png
             │   ├── figma_gameNormal.png
