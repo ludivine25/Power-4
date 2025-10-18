@@ -13,6 +13,7 @@ h1, h2 {
 table {
     margin: auto;
     border-collapse: collapse;
+    margin-bottom: 30px;
 }
 
 td {
@@ -60,6 +61,11 @@ button, .button {
 button:hover, .button:hover {
     background-color: #fff;
     color: #000;
+}
+
+.button-container {
+    margin-top: 40px;
+    text-align: center;
 }
 
 select, input {
