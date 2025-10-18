@@ -139,8 +139,9 @@ Au debut les jetons tombent du bas vers le haut, puis au bout de 5 tours le jeto
 
 Documentation:
 
-Go      net/http
-Go      Templates
+Go:
+    [net/http](https://pkg.go.dev/net/http) 
+    Templates
 HTML/CSS pour débutants
 
 Auteur:
