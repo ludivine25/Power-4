@@ -82,10 +82,10 @@ Tapez :
 
     go run server.go
 
-(Le serveur démarre et affiche un message comme : Serveur lancé sur http://localhost:8000 )
+(Le serveur démarre et affiche un message comme : Serveur lancé sur http://localhost:8080 )
 
 4. Ouvrir le jeu dans le navigateur
-Copiez l’adresse affichée (http://localhost:8000) et collez-la dans votre navigateur.
+Copiez l’adresse affichée (http://localhost:8080) et collez-la dans votre navigateur.
 
 🕹️ Comment jouer:
 
